@@ -4,31 +4,21 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import java.util.List;
-
 /**
- * Created by deshanchathusanka on 4/4/18.
+ * Created by deshanchathusanka on 4/5/18.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "name",
-        "age",
-        "childrens",
-        "address"
+        "age"
 })
-public class Person {
+public class Child {
 
     @JsonProperty("name")
     private String name;
 
     @JsonProperty("age")
     private int age;
-
-    @JsonProperty("childrens")
-    private List<Child> children;
-
-    @JsonProperty("address")
-    private Address address;
 
     public String getName() {
         return name;
@@ -44,13 +34,5 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
     }
 }

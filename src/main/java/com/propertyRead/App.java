@@ -31,9 +31,9 @@ public class App
     public static void main( String[] args )
     {
         //read from properties file using resource bundle
-        Locale.setDefault(new Locale("en","US"));
+        /*Locale.setDefault(new Locale("en","US"));
         ResourceBundle resourceBundle = ResourceBundle.getBundle("CountryDetails_us", Locale.getDefault());
-        System.out.println("name : "+resourceBundle.getString("name")+"\tcapital : "+resourceBundle.getString("capital"));
+        System.out.println("name : "+resourceBundle.getString("name")+"\tcapital : "+resourceBundle.getString("capital"));*/
 
         //load data from properties and convert to json
         App app=new App();
