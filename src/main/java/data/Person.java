@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -13,6 +14,7 @@ import java.util.List;
 @JsonPropertyOrder({
         "name",
         "age",
+        "DoB",
         "childrens",
         "address"
 })
@@ -23,6 +25,9 @@ public class Person {
 
     @JsonProperty("age")
     private int age;
+
+    @JsonProperty("DoB")
+    private LocalDateTime dob;
 
     @JsonProperty("childrens")
     private List<Child> children;
@@ -52,5 +57,21 @@ public class Person {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public LocalDateTime getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDateTime dob) {
+        this.dob = dob;
+    }
+
+    public List<Child> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Child> children) {
+        this.children = children;
     }
 }
