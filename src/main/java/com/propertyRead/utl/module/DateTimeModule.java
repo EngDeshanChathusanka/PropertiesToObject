@@ -1,8 +1,8 @@
-package utl.module;
+package com.propertyRead.utl.module;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import utl.deserializer.DateTimeDeserializer;
-import utl.serializer.DateTimeSerializer;
+import com.propertyRead.utl.deserializer.DateTimeDeserializer;
+import com.propertyRead.utl.serializer.DateTimeSerializer;
 
 import java.time.LocalDateTime;
 

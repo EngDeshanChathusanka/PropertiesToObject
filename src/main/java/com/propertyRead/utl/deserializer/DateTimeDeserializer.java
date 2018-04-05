@@ -1,4 +1,4 @@
-package utl.deserializer;
+package com.propertyRead.utl.deserializer;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;

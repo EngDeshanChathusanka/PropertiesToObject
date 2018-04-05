@@ -1,9 +1,9 @@
 package com.propertyRead;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import data.Person;
+import com.propertyRead.data.Person;
+import com.propertyRead.utl.module.DateTimeModule;
 import pl.jalokim.propertiestojson.util.PropertiesToJsonParser;
-import utl.module.DateTimeModule;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -49,6 +49,7 @@ public class App
     }
     public static void main( String[] args )
     {
+
         //read from properties file using resource bundle
         Locale.setDefault(new Locale("en","US"));
         ResourceBundle resourceBundle = ResourceBundle.getBundle("CountryDetails_us", Locale.getDefault());

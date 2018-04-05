@@ -1,4 +1,4 @@
-package utl.serializer;
+package com.propertyRead.utl.serializer;
 
 
 import com.fasterxml.jackson.core.JsonGenerator;
